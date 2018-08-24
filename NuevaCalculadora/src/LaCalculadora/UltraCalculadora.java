@@ -57,22 +57,67 @@ CalTrigo objetoTrigonométrico = new CalTrigo ();
         });
 
         b2.setText("2");
+        b2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b2MouseClicked(evt);
+            }
+        });
 
         b3.setText("3");
+        b3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b3MouseClicked(evt);
+            }
+        });
 
         b4.setText("4");
+        b4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b4MouseClicked(evt);
+            }
+        });
 
         b5.setText("5");
+        b5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b5MouseClicked(evt);
+            }
+        });
 
         b6.setText("6");
+        b6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b6MouseClicked(evt);
+            }
+        });
 
         b7.setText("7");
+        b7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b7MouseClicked(evt);
+            }
+        });
 
         b8.setText("8");
+        b8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b8MouseClicked(evt);
+            }
+        });
 
         b9.setText("9");
+        b9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b9MouseClicked(evt);
+            }
+        });
 
         b0.setText("0");
+        b0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b0MouseClicked(evt);
+            }
+        });
 
         bsuma.setText("+");
 
@@ -196,11 +241,46 @@ CalTrigo objetoTrigonométrico = new CalTrigo ();
 
     private void b1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseClicked
       
-        
-        
-        
+       textoObjeto.setText(textoObjeto.getText() + "1");
+   
     }//GEN-LAST:event_b1MouseClicked
 
+    private void b3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseClicked
+       textoObjeto.setText(textoObjeto.getText() + "3");
+    }//GEN-LAST:event_b3MouseClicked
+
+    private void b2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2MouseClicked
+      textoObjeto.setText(textoObjeto.getText() + "2");
+    }//GEN-LAST:event_b2MouseClicked
+
+    private void b4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseClicked
+       textoObjeto.setText(textoObjeto.getText() + "4");
+    }//GEN-LAST:event_b4MouseClicked
+
+    private void b5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseClicked
+    textoObjeto.setText(textoObjeto.getText() + "5");
+    }//GEN-LAST:event_b5MouseClicked
+
+    private void b6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseClicked
+     textoObjeto.setText(textoObjeto.getText() + "6");
+    }//GEN-LAST:event_b6MouseClicked
+
+    private void b7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b7MouseClicked
+    textoObjeto.setText(textoObjeto.getText() + "7");
+    }//GEN-LAST:event_b7MouseClicked
+
+    private void b8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b8MouseClicked
+  textoObjeto.setText(textoObjeto.getText() + "8");
+    }//GEN-LAST:event_b8MouseClicked
+
+    private void b9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b9MouseClicked
+      textoObjeto.setText(textoObjeto.getText() + "9");
+    }//GEN-LAST:event_b9MouseClicked
+
+    private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
+   textoObjeto.setText(textoObjeto.getText() + "0");
+    }//GEN-LAST:event_b0MouseClicked
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b0;
