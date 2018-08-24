@@ -3,14 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package LaCalculadora;
- 
+
 public class UltraCalculadora extends javax.swing.JPanel {
-    
     public UltraCalculadora() {
         initComponents();
-        
     }
+     public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new UltraCalculadora().setVisible(true);
+            }
+        });
+    }    
+    
+   
+   
     CalAritmetica objetoAritmético = new CalAritmetica();
     CalTrigo objetoTrigonométrico = new CalTrigo ();
       
