@@ -6,13 +6,16 @@
 package LaCalculadora;
  
 public class UltraCalculadora extends javax.swing.JPanel {
- 
     
-CalAritmetica objetoAritmético = new CalAritmetica();
-CalTrigo objetoTrigonométrico = new CalTrigo ();  
     public UltraCalculadora() {
         initComponents();
+        
     }
+    CalAritmetica objetoAritmético = new CalAritmetica();
+    CalTrigo objetoTrigonométrico = new CalTrigo ();
+      
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -290,9 +293,10 @@ CalTrigo objetoTrigonométrico = new CalTrigo ();
     private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
    textoObjeto.setText(textoObjeto.getText() + "0");
     }//GEN-LAST:event_b0MouseClicked
-
+double numero1;
     private void bsumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bsumaMouseClicked
-   double adicionar = Double.parseDouble(textoObjeto.getText());
+    numero1 += new Double(textoObjeto.getText());
+    textoObjeto.setText(String.valueOf(numero1));
         objetoAritmético.suma();
     }//GEN-LAST:event_bsumaMouseClicked
 

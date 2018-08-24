@@ -11,8 +11,11 @@ package LaCalculadora;
  */
 public class PrincipalCode {
     public static void main(String [] args){
+        UltraCalculadora test = new UltraCalculadora();
         
-       CalAritmetica laAritmetica = new CalAritmetica ();
+        test.setVisible(true);
+        
+       /*CalAritmetica laAritmetica = new CalAritmetica ();
        CalTrigo laTrigonometrica = new CalTrigo ();
        CalConvertir laConvertidora = new CalConvertir ();
         
@@ -21,8 +24,8 @@ public class PrincipalCode {
        laAritmetica.resta();
        laAritmetica.division();
        laAritmetica.multiplicacion();
-                
-       System.out.println(laAritmetica.operando1);
+                */
+       //System.out.println(laAritmetica.operando1);
     }
     
 }
