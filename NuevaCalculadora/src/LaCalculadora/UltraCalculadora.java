@@ -120,8 +120,18 @@ CalTrigo objetoTrigonométrico = new CalTrigo ();
         });
 
         bsuma.setText("+");
+        bsuma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bsumaMouseClicked(evt);
+            }
+        });
 
         bresta.setText("-");
+        bresta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                brestaMouseClicked(evt);
+            }
+        });
 
         bdivisión.setText("/");
 
@@ -280,7 +290,17 @@ CalTrigo objetoTrigonométrico = new CalTrigo ();
     private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
    textoObjeto.setText(textoObjeto.getText() + "0");
     }//GEN-LAST:event_b0MouseClicked
- 
+
+    private void bsumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bsumaMouseClicked
+   double adicionar = Double.parseDouble(textoObjeto.getText());
+        objetoAritmético.suma();
+    }//GEN-LAST:event_bsumaMouseClicked
+
+    private void brestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_brestaMouseClicked
+   double restar = Double.parseDouble(textoObjeto.getText());
+    objetoAritmético.resta();
+    }//GEN-LAST:event_brestaMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b0;
