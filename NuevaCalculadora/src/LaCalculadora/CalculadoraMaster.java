@@ -114,6 +114,11 @@ CalTrigo trigo = new CalTrigo ();
         bmultiplicar.setText("*");
 
         bmenos.setText("-");
+        bmenos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bmenosMouseClicked(evt);
+            }
+        });
 
         bSen.setText("sen");
 
@@ -254,13 +259,20 @@ CalTrigo trigo = new CalTrigo ();
 
     private void bmasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmasMouseClicked
      double valor = Double.parseDouble(cajaTexto.getText());
-     cajaTexto.setText(cajaTexto.getText()+" + ");
-     
+     arit.operando1=valor;
+     cajaTexto.setText(" ");
+     double valor2 = Double.parseDouble(cajaTexto.getText());
+     arit.operando2=valor2;
+     arit.suma();
+    
     }//GEN-LAST:event_bmasMouseClicked
 
     private void bigualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigualMouseClicked
-      
-   
+    
+    String resultado = String.valueOf(arit.suma());
+    cajaTexto.setText(resultado); 
+    
+    
     }//GEN-LAST:event_bigualMouseClicked
 
     private void b3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseClicked
@@ -294,6 +306,12 @@ CalTrigo trigo = new CalTrigo ();
     private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
      cajaTexto.setText(cajaTexto.getText()+"0");
     }//GEN-LAST:event_b0MouseClicked
+
+    private void bmenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmenosMouseClicked
+     double valor = Double.parseDouble(cajaTexto.getText());
+     arit.operando1=valor;
+     cajaTexto.setText(" ");
+    }//GEN-LAST:event_bmenosMouseClicked
 
     /**
      * @param args the command line arguments
