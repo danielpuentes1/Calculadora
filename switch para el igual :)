@@ -1,0 +1,22 @@
+# Calculadora
+calculadora con todos los tipos
+
+
+private void OperandoIgualMouseClicked(java.awt.event.MouseEvent evt) {                                           
+
+        switch(opcion){
+            case 1:
+                aritmetica.suma();
+                break;
+                
+            case 2:
+                
+                
+                
+            
+        }
+        
+        
+  Tienes que en cada caso armar la funcion, el caso dos para la resta, el tres para la multiplicacion
+   No te pude poner de colaborador por lo que el repositorio lo creo fue mi compañero, y no he podido hablar con el para que te ponga,
+   pero ese es el codigo para el igual :)
