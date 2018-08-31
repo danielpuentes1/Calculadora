@@ -26,6 +26,7 @@
           <Group type="102" attributes="0">
               <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="cajaTexto" min="-2" pref="259" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -43,15 +44,33 @@
                               <Component id="bCos" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="bTan" min="-2" max="-2" attributes="0"/>
+=======
+                  <Component id="cajaTexto" alignment="0" min="-2" pref="259" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="b4" min="-2" max="-2" attributes="0"/>
+                          <Component id="b7" min="-2" max="-2" attributes="0"/>
+                          <Component id="b1" min="-2" max="-2" attributes="0"/>
+                          <Component id="bSen" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="b0" min="-2" max="-2" attributes="0"/>
+>>>>>>> origin/master
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="bigual" min="-2" max="-2" attributes="0"/>
                           </Group>
+<<<<<<< HEAD
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
                                   <Component id="b0" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="bmas" min="-2" max="-2" attributes="0"/>
                               </Group>
+=======
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+>>>>>>> origin/master
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="b8" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -118,6 +137,7 @@
                   <Component id="b0" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="bmas" min="-2" max="-2" attributes="0"/>
               </Group>
+<<<<<<< HEAD
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -128,6 +148,19 @@
                   <Component id="bigual" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="27" max="32767" attributes="0"/>
+=======
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="bigual" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="b0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="51" max="32767" attributes="0"/>
+>>>>>>> origin/master
           </Group>
       </Group>
     </DimensionLayout>

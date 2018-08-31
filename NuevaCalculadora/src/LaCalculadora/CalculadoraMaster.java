@@ -172,6 +172,7 @@ public class CalculadoraMaster extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(cajaTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -194,6 +195,22 @@ public class CalculadoraMaster extends javax.swing.JFrame {
                                     .addComponent(b0)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(bmas))
+=======
+                    .addComponent(cajaTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(b4)
+                            .addComponent(b7)
+                            .addComponent(b1)
+                            .addComponent(bSen))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(b0)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(bigual))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+>>>>>>> origin/master
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(b8)
@@ -247,10 +264,23 @@ public class CalculadoraMaster extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(bCos)
+<<<<<<< HEAD
                         .addComponent(bSen)
                         .addComponent(bTan))
                     .addComponent(bigual))
                 .addContainerGap(27, Short.MAX_VALUE))
+=======
+                        .addComponent(bTan)
+                        .addComponent(bmas)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bigual))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(b0)))
+                .addContainerGap(51, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
 
         pack();
@@ -271,12 +301,22 @@ public class CalculadoraMaster extends javax.swing.JFrame {
 
     private void bmasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmasMouseClicked
      double valor = Double.parseDouble(cajaTexto.getText());
+<<<<<<< HEAD
     arit.operando1 = valor;
     cajaTexto.setText(" ");
     arit.operando = "+";
+=======
+     arit.operando1=valor;
+     cajaTexto.setText(" ");
+     double valor2 = Double.parseDouble(cajaTexto.getText());
+     arit.operando2=valor2;
+     arit.suma();
+    
+>>>>>>> origin/master
     }//GEN-LAST:event_bmasMouseClicked
 
     private void bigualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigualMouseClicked
+<<<<<<< HEAD
     double valor2 = Double.parseDouble(cajaTexto.getText());
     arit.operando2 = valor2;
    
@@ -293,9 +333,17 @@ public class CalculadoraMaster extends javax.swing.JFrame {
             default:
                     break;
     }
+=======
+    
+    String resultado = String.valueOf(arit.suma());
+    cajaTexto.setText(resultado); 
+    
+    
+>>>>>>> origin/master
     }//GEN-LAST:event_bigualMouseClicked
 
     private void b3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseClicked
+<<<<<<< HEAD
         cajaTexto.setText(cajaTexto.getText()+"3");    }//GEN-LAST:event_b3MouseClicked
 
     private void b4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseClicked
@@ -341,6 +389,44 @@ double valor = Double.parseDouble(cajaTexto.getText());
      double valor = Double.parseDouble(cajaTexto.getText());
     arit.operando1 = valor;
     }//GEN-LAST:event_bdividirMouseClicked
+=======
+    cajaTexto.setText(cajaTexto.getText()+"3");
+    }//GEN-LAST:event_b3MouseClicked
+
+    private void b4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseClicked
+     cajaTexto.setText(cajaTexto.getText()+"4");
+    }//GEN-LAST:event_b4MouseClicked
+
+    private void b5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseClicked
+     cajaTexto.setText(cajaTexto.getText()+"5");
+    }//GEN-LAST:event_b5MouseClicked
+
+    private void b6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"6");
+    }//GEN-LAST:event_b6MouseClicked
+
+    private void b7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b7MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"7");
+    }//GEN-LAST:event_b7MouseClicked
+
+    private void b8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b8MouseClicked
+     cajaTexto.setText(cajaTexto.getText()+"8");
+    }//GEN-LAST:event_b8MouseClicked
+
+    private void b9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b9MouseClicked
+       cajaTexto.setText(cajaTexto.getText()+"9");
+    }//GEN-LAST:event_b9MouseClicked
+
+    private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
+     cajaTexto.setText(cajaTexto.getText()+"0");
+    }//GEN-LAST:event_b0MouseClicked
+
+    private void bmenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmenosMouseClicked
+     double valor = Double.parseDouble(cajaTexto.getText());
+     arit.operando1=valor;
+     cajaTexto.setText(" ");
+    }//GEN-LAST:event_bmenosMouseClicked
+>>>>>>> origin/master
 
     /**
      * @param args the command line arguments
