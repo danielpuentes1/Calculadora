@@ -8,13 +8,16 @@ package LaCalculadora;
 
 public class CalculadoraMaster extends javax.swing.JFrame {
 
+    
+
  
     
     public CalculadoraMaster() {
         initComponents();
     }
-CalAritmetica arit = new CalAritmetica();
-CalTrigo trigo = new CalTrigo ();
+    CalAritmetica arit = new CalAritmetica();
+
+    CalTrigo trigo = new CalTrigo ();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,6 +45,7 @@ CalTrigo trigo = new CalTrigo ();
         bTan = new javax.swing.JButton();
         bmas = new javax.swing.JButton();
         bigual = new javax.swing.JButton();
+        b0 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,8 +57,18 @@ CalTrigo trigo = new CalTrigo ();
         });
 
         b7.setText("7");
+        b7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b7MouseClicked(evt);
+            }
+        });
 
         b4.setText("4");
+        b4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b4MouseClicked(evt);
+            }
+        });
 
         b2.setText("2");
         b2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -64,20 +78,60 @@ CalTrigo trigo = new CalTrigo ();
         });
 
         b8.setText("8");
+        b8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b8MouseClicked(evt);
+            }
+        });
 
         b5.setText("5");
+        b5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b5MouseClicked(evt);
+            }
+        });
 
         b3.setText("3");
+        b3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b3MouseClicked(evt);
+            }
+        });
 
         b9.setText("9");
+        b9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b9MouseClicked(evt);
+            }
+        });
 
         b6.setText("6");
+        b6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b6MouseClicked(evt);
+            }
+        });
 
         bdividir.setText("/");
+        bdividir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bdividirMouseClicked(evt);
+            }
+        });
 
         bmultiplicar.setText("*");
+        bmultiplicar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bmultiplicarMouseClicked(evt);
+            }
+        });
 
         bmenos.setText("-");
+        bmenos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bmenosMouseClicked(evt);
+            }
+        });
 
         bSen.setText("sen");
 
@@ -104,6 +158,13 @@ CalTrigo trigo = new CalTrigo ();
             }
         });
 
+        b0.setText("0");
+        b0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b0MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -111,17 +172,28 @@ CalTrigo trigo = new CalTrigo ();
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cajaTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(bigual)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(b4)
-                                .addComponent(b7)
-                                .addComponent(b1)
-                                .addComponent(bSen))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(cajaTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(b1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(b4, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(b7, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(bSen, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(bCos)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(bTan)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(bigual))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(b0)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(bmas))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(b8)
@@ -132,18 +204,12 @@ CalTrigo trigo = new CalTrigo ();
                                         .addComponent(b6)
                                         .addComponent(b3)
                                         .addComponent(b9))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGap(48, 48, 48)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(bmultiplicar)
                                         .addComponent(bmenos)
-                                        .addComponent(bdividir)))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(bCos)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(bTan)
-                                    .addGap(26, 26, 26)
-                                    .addComponent(bmas))))))
-                .addContainerGap(106, Short.MAX_VALUE))
+                                        .addComponent(bdividir)))))))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,14 +241,16 @@ CalTrigo trigo = new CalTrigo ();
                         .addComponent(bmenos)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bSen)
+                    .addComponent(b0)
+                    .addComponent(bmas))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(bCos)
-                        .addComponent(bTan)
-                        .addComponent(bmas)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bigual)
-                .addContainerGap(63, Short.MAX_VALUE))
+                        .addComponent(bSen)
+                        .addComponent(bTan))
+                    .addComponent(bigual))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
@@ -203,13 +271,76 @@ CalTrigo trigo = new CalTrigo ();
 
     private void bmasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmasMouseClicked
      double valor = Double.parseDouble(cajaTexto.getText());
-     cajaTexto.setText(" ");
+    arit.operando1 = valor;
+    cajaTexto.setText(" ");
+    arit.operando = "+";
     }//GEN-LAST:event_bmasMouseClicked
 
     private void bigualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigualMouseClicked
-      
+    double valor2 = Double.parseDouble(cajaTexto.getText());
+    arit.operando2 = valor2;
    
+    switch(arit.operando){
+            case "+":                
+                String rest = String.valueOf(arit.suma());                
+                cajaTexto.setText(rest);
+                break;
+                
+            case "-":
+                arit.resta();
+                break;
+                
+            default:
+                    break;
+    }
     }//GEN-LAST:event_bigualMouseClicked
+
+    private void b3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseClicked
+        cajaTexto.setText(cajaTexto.getText()+"3");    }//GEN-LAST:event_b3MouseClicked
+
+    private void b4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"4");
+    }//GEN-LAST:event_b4MouseClicked
+
+    private void b5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"5");
+    }//GEN-LAST:event_b5MouseClicked
+
+    private void b6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseClicked
+     cajaTexto.setText(cajaTexto.getText()+"6");
+    }//GEN-LAST:event_b6MouseClicked
+
+    private void b7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b7MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"7");
+    }//GEN-LAST:event_b7MouseClicked
+
+    private void b8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b8MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"8");
+    }//GEN-LAST:event_b8MouseClicked
+
+    private void b9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b9MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"9");
+    }//GEN-LAST:event_b9MouseClicked
+
+    private void b0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b0MouseClicked
+    cajaTexto.setText(cajaTexto.getText()+"0");
+    }//GEN-LAST:event_b0MouseClicked
+
+    private void bmenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmenosMouseClicked
+double valor = Double.parseDouble(cajaTexto.getText());
+    arit.operando1 = valor; 
+    cajaTexto.setText(" ");
+    }//GEN-LAST:event_bmenosMouseClicked
+
+    private void bmultiplicarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmultiplicarMouseClicked
+     double valor = Double.parseDouble(cajaTexto.getText());
+    arit.operando1 = valor;
+    }//GEN-LAST:event_bmultiplicarMouseClicked
+
+    private void bdividirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bdividirMouseClicked
+     double valor = Double.parseDouble(cajaTexto.getText());
+    arit.operando1 = valor;
+    }//GEN-LAST:event_bdividirMouseClicked
 
     /**
      * @param args the command line arguments
@@ -247,6 +378,7 @@ CalTrigo trigo = new CalTrigo ();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton b0;
     private javax.swing.JButton b1;
     private javax.swing.JButton b2;
     private javax.swing.JButton b3;
