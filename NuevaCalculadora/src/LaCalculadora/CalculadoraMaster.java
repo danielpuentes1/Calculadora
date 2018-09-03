@@ -287,7 +287,16 @@ public class CalculadoraMaster extends javax.swing.JFrame {
                 break;
                 
             case "-":
-                arit.resta();
+                String rest2 = String.valueOf(arit.resta()); 
+                cajaTexto.setText(rest2);                
+                break;
+                  case "*":
+                String rest3 = String.valueOf(arit.multiplicacion()); 
+                cajaTexto.setText(rest3);                
+                break;
+                  case "/":
+                String rest4 = String.valueOf(arit.division()); 
+                cajaTexto.setText(rest4);                
                 break;
                 
             default:
@@ -330,16 +339,21 @@ public class CalculadoraMaster extends javax.swing.JFrame {
 double valor = Double.parseDouble(cajaTexto.getText());
     arit.operando1 = valor; 
     cajaTexto.setText(" ");
+    arit.operando = "-";
     }//GEN-LAST:event_bmenosMouseClicked
 
     private void bmultiplicarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bmultiplicarMouseClicked
-     double valor = Double.parseDouble(cajaTexto.getText());
-    arit.operando1 = valor;
+    double valor = Double.parseDouble(cajaTexto.getText());
+    arit.operando1 = valor; 
+    cajaTexto.setText(" ");
+    arit.operando = "*";
     }//GEN-LAST:event_bmultiplicarMouseClicked
 
     private void bdividirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bdividirMouseClicked
-     double valor = Double.parseDouble(cajaTexto.getText());
-    arit.operando1 = valor;
+    double valor = Double.parseDouble(cajaTexto.getText());
+    arit.operando1 = valor; 
+    cajaTexto.setText(" ");
+    arit.operando = "/";
     }//GEN-LAST:event_bdividirMouseClicked
 
     /**
